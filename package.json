@@ -1,0 +1,29 @@
+{
+  "name": "meshop",
+  "version": "1.0.0",
+  "description": "- Frontend: React-Redux\r - Backend: Node.js, Express.js\r - Database: MongoDB\r - ORM: Mongoose",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --watch backend --exec babel-node backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mahi397/MeShop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mahi397/MeShop/issues"
+  },
+  "homepage": "https://github.com/mahi397/MeShop#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/preset-env": "^7.12.10",
+    "nodemon": "^2.0.6"
+  }
+}
