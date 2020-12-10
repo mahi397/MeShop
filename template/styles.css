@@ -1,0 +1,61 @@
+html{
+    font-size: 62.5%; /* 16px * 62.5 = 10px = 1rem */  /*default font size in browser=16px*/ /*using rem instead of px bec better in diff browser sizes*/
+    box-sizing: border-box;
+  }
+
+  body{
+    font: 1.6rem Helvetica;     /* 1.6 rem = 60px */
+    height: 100vh;              /* vh = viewport height */
+    margin: 0;                  /* to override default margin set by browser */
+  }
+
+  .grid-container{
+    display: grid;  /* style to layout in html */
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-columns: 1fr; /* fragment */
+    grid-template-rows: 5rem 1fr 5rem;  /* 3 rows */
+    height: 100%;   /* to cover whole height of viewport */
+  }
+
+  .header{
+    grid-area: header;
+    background-color: #203040;
+    color: #ffffff;
+    display: flex;                  /* to get a sort of nav box */
+    justify-content: space-between; /* content on left and right */
+    align-items: center;            /* to vertically center */
+    padding: 0.5rem;                
+  }
+
+  .brand a{              /* for all links inside brand */
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration: none;      /* to get rid of underline in links */
+  }
+
+  .header-links a{      /* for all links inside header-links */
+    color:#ffffff;
+    text-decoration: none;
+    padding: 1rem;
+  }
+
+  .header-links a:hover{
+    color:#ff8000;
+  }
+  
+  .main{
+    grid-area: main;
+  }
+
+  .footer{
+    grid-area: footer;
+    background-color: #203040;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
